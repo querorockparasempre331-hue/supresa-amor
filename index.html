@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para meu amor ❤️</title>
+  
+  <!-- Fontes do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #801414 0%, #4a0a0a 100%);
+      color: #ffffff;
+      line-height: 1.6;
+      padding: 20px 15px;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      padding: 15px 10px 20px;
+    }
+    .header-photo {
+      max-width: 500px;
+      width: 100%;
+      height: 180px;
+      margin: 0 auto 15px auto;
+      border-radius: 15px;
+      overflow: hidden;
+      border: 4px solid #ffffff;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    }
+    .header-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    header h1 {
+      font-family: 'Dancing Script', cursive;
+      color: #ffffff;
+      font-size: 2.6rem;
+      margin-bottom: 5px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    header p {
+      font-size: 0.95rem;
+      color: #ffcccc;
+    }
+    .card {
+      background: #a31d1d;
+      border-radius: 20px;
+      padding: 22px;
+      margin: 20px auto;
+      max-width: 500px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+      color: #ffffff;
+    }
+    .card h2 {
+      font-family: 'Dancing Script', cursive;
+      color: #ffd1d1;
+      margin-bottom: 15px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .music-card {
+      text-align: center;
+      background: #631212;
+      border: 2px dashed #a31d1d;
+    }
+    .music-card p {
+      font-weight: 600;
+      color: #ffd1d1;
+      margin-bottom: 12px;
+    }
+    audio {
+      width: 100%;
+      border-radius: 30px;
+    }
+    .timeline-item {
+      border-left: 3px solid #ff8080;
+      padding-left: 15px;
+      margin-bottom: 18px;
+    }
+    .timeline-item span {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #ffd1d1;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .video-container {
+      width: 100%;
+      border-radius: 15px;
+      overflow: hidden;
+      margin-top: 10px;
+      background-color: #000000;
+    }
+    video {
+      width: 100%;
+      display: block;
+    }
+    .letter-highlight {
+      font-weight: 600;
+      color: #ffe6e6;
+      background: rgba(0, 0, 0, 0.15);
+      padding: 12px;
+      border-radius: 12px;
+      border-left: 4px solid #ff8080;
+    }
+    /* Estilo para a cartinha secreta */
+    .secret-card {
+      background: #801414;
+      border: 2px dashed #ffd1d1;
+      text-align: center;
+    }
+    .secret-content {
+      display: none;
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.3);
+      text-align: left;
+    }
+    .unlock-btn {
+      background: #ffffff;
+      color: #801414;
+      border: none;
+      padding: 12px 20px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s;
+      font-family: 'Poppins', sans-serif;
+    }
+    .unlock-btn:active {
+      transform: scale(0.95);
+    }
+    footer {
+      text-align: center;
+      margin-top: 35px;
+      padding: 15px;
+      font-size: 0.85rem;
+      color: #e6a8a8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. MÚSICA NO COMEÇO -->
+  <div class="card music-card">
+    <p>🎵 Aperte o play para ouvir nossa música:</p>
+    <audio controls loop>
+      <source src="musica.mp3" type="audio/mp3">
+      O seu navegador não suporta este áudio.
+    </audio>
+  </div>
+
+  <!-- FOTO EMBAIXO DA MÚSICA -->
+  <div style="max-width: 500px; margin: 15px auto; text-align: center;">
+    <img src="foto-musica.jpg" alt="Foto especial" style="width: 100%; border-radius: 20px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35); display: block;" onerror="this.style.display='none'">
+  </div>
+
+  <!-- 2. TÍTULO PRINCIPAL COM FOTO -->
+  <header>
+    <div class="header-photo">
+      <img src="foto-header.jpg" alt="Foto do casal" onerror="this.parentElement.innerHTML='<div style=\'padding:10px;color:#ffd1d1;font-size:0.8rem;\'>📸 Coloque <b>foto-header.jpg</b> na pasta Downloads</div>'">
+    </div>
+    <h1>Uma surpresa para o meu amor ❤️</h1>
+    <p>Aqui mostro tudo o que eu imagino construir com você</p>
+  </header>
+
+  <!-- 3. CARTA DE AMOR -->
+  <div class="card">
+    <h2>Uma carta para você 💌</h2>
+    <p>
+      <b>Meu amor,</b>
+    </p>
+    <p style="margin-top: 10px;">
+      Demorei dias para te montar essa surpresa, mas cada segundo valeu a pena só para deixar registrado tudo o que a gente está construindo juntos. Você é a minha maior inspiração todos os dias. Assim que eu acordo, você é o meu primeiro pensamento, e quando vou dormir, é o último. Não tem um segundo do meu dia em que lembrar de você não me tire um sorriso sincero.
+    </p>
+    <p style="margin-top: 10px;">
+      Olhar para tudo o que a gente já viveu e para o jeito que nos apoiamos me dá a certeza sincera de que estou exatamente onde deveria estar. Cada conversa, cada risada e até os momentos mais simples mostram como a vida fica muito mais leve e bonita do seu lado. Você torna até os meus dias mais chuvosos em dias de sol, me trazendo uma paz que eu nem sabia que precisava e um amor que supera qualquer coisa.
+    </p>
+    <p style="margin-top: 10px;">
+      E não é só sobre o carinho, é sobre a química absurda que temos. O desejo que eu sinto por você só aumenta a cada dia. Todo o desejo que expressamos em nossas intimidades me deixa louca de vontade de te ter por perto.
+    </p>
+    <p style="margin-top: 10px;">
+      A distância às vezes é difícil, mas nada disso diminui o que eu sinto por você. Pelo contrário, só me faz dar ainda mais valor a cada segundo e desejar ainda mais o NOSSO momento. Eu não vejo a hora da gente se ver pessoalmente, de olhar nos olhos sem ser por uma tela de celular, te dar aquele abraço bem apertado, sentir seu corpo no meu e viver de perto tudo o que a gente sonha e deseja.
+    </p>
+    <p style="margin-top: 10px;">
+      Mais do que o presente, o que me move é a certeza da vida linda que vamos construir lado a lado. Eu quero casar com você, construir o nosso lar, ter os nossos filhos e ver a nossa família crescer com todo o amor do mundo. Quero envelhecer ao seu lado, ver os anos passarem com a mesma cumplicidade de hoje e, quando o nosso tempo aqui terminar, quero que até o nosso descanso final seja juntos. O meu amor por você é pra esta vida e além.
+    </p>
+    <p style="margin-top: 10px;">
+      Obrigada por ser o meu porto seguro, meu melhor amigo, minha atração fatal e o grande amor da minha vida. Que a gente continue cuidando disso com todo o carinho e paixão do mundo, construindo a nossa história do jeitinho que sonhamos.
+    </p>
+    <p style="margin-top: 15px;" class="letter-highlight">
+      Preparei esse vídeozinho logo abaixo com todo carinho do mundo, aqui expresso tudo que eu ainda quero realizar com você até partirmos dessa vida juntos. 🎥✨
+    </p>
+    <p style="margin-top: 15px; font-weight: 600;">
+      Te amo até o infinito! ❤
+    </p>
+    <p style="margin-top: 5px; font-style: italic; color: #ffd1d1;">
+      Com amor: Thalissa
+    </p>
+  </div>
+
+  <!-- 4. NOSSA HISTÓRIA -->
+  <div class="card">
+    <h2>O Nosso Futuro ✈️ ou Sonhos a Dois</h2>
+    
+    <div class="timeline-item">
+      <span>O próximo passo</span>
+      <p>conhecer novos lugares, criar novas memórias e continuar a crescer lado a lado</p>
+    </div>
+
+    <div class="timeline-item">
+      <span>para sempre</span>
+      <p>manter a nossa chama acesa e construir diariamente o nosso felizes para sempre</p>
+    </div>
+  </div>
+
+  <!-- 5. VÍDEO -->
+  <div class="card">
+    <h2>o nosso para sempre feito em uma animação</h2>
+    <div class="video-container">
+      <video controls poster="">
+        <source src="video.mp4" type="video/mp4">
+        O seu navegador não suporta este vídeo.
+      </video>
+    </div>
+  </div>
+    </style>
+</head>
+<body>
+
+  <!-- 1. MÚSICA NO final -->
+  <div class="card music-card">
+    <p>🎵 Aperte o play para continuar ouvindo uma linda musica dedicada a voce:</p>
+      <source src="musica_2.mp3" type="audio/mp3">
+    <audio controls loop>
+      O seu navegador não suporta este áudio.
+    </audio>
+  </div>
+
+  <!-- 6. CARTINHA SECRETA PÓS-VÍDEO -->
+  <div class="card secret-card">
+    <h2>Uma última surpresa... 🔒❤️️</h2>
+    <p style="margin-bottom: 15px; font-size: 0.9rem; color: #ffd1d1;">
+      Já assistiu ao vídeo todinho? Se sim, clica no botão abaixo para ler:
+    </p>
+    
+    <button class="unlock-btn" onclick="revelarCarta()">
+      ✨ Já assisti ao vídeo! Abrir mensagem
+    </button>
+
+    <div id="cartaSecreta" class="secret-content">
+      <p><b>Ainda está aqui, meu amor? voce gostou?🥺❤️</b></p>
+      <p style="margin-top: 10px;">
+        Se você está lendo isso, significa que já viu a animação e sentiu cada pedacinho do amor que coloquei aqui.
+      </p>
+      <p style="margin-top: 10px;">
+        Escrevi tudo isso só para te lembrar que, independentemente do tempo, ou de qualquer desafio, o meu lugar é e sempre será ao seu lado. quero dividir os melhores momentos da minha vida com voce, não importa quantos tentarem derrubar. o que Deus une, ninguém separa. Obrigada por ser o amor da minha vida!
+      </p>
+      <p style="margin-top: 15px; font-weight: bold; text-align: center; color: #ffd1d1;">
+        Te amo infinitamente! 💖
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    Feito com carinho e muito código por Thalissa 💻❤️
+  </footer>
+
+  <script>
+    function revelarCarta() {
+      var carta = document.getElementById("cartaSecreta");
+      if (carta.style.display === "none" || carta.style.display === "") {
+        carta.style.display = "block";
+      } else {
+        carta.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
+<!-- ================= INÍCIO DA SEÇÃO RASPADINHA ================= -->
+<!-- Biblioteca de confetes (coloque no <head> ou aqui antes da tag) -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<style>
+  .scratch-section {
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 15px;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  }
+
+  .scratch-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .scratch-header h2 {
+    color: #d63384;
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+  }
+
+  .scratch-header p {
+    color: #6c757d;
+    font-size: 0.95rem;
+  }
+
+  .scratch-counter-box {
+    background: #ffffff;
+    padding: 10px 24px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(214, 51, 132, 0.12);
+    margin: 0 auto 25px auto;
+    width: fit-content;
+    font-weight: 700;
+    color: #d63384;
+    font-size: 1.05rem;
+    text-align: center;
+  }
+
+  .scratch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+    width: 100%;
+  }
+
+  .scratch-card {
+    position: relative;
+    width: 100%;
+    height: 135px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    background-color: #ffffff;
+    transition: transform 0.2s ease;
+  }
+
+  .scratch-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .scratch-secret-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #2c3e50;
+    background: #fff0f3;
+    line-height: 1.35;
+    box-sizing: border-box;
+  }
+
+  .scratch-number-tag {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-size: 0.75rem;
+    color: #d63384;
+    font-weight: 800;
+  }
+
+  .scratch-card canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    touch-action: none;
+  }
+</style>
+
+<div class="scratch-section">
+  <div class="scratch-header">
+    <h2>100 Coisas Para Fazer Juntos ❤️</h2>
+    <p>Raspe cada cartão para revelar nossos momentos e sonhos!</p>
+  </div>
+
+  <div class="scratch-counter-box">
+    Concluídos: <span id="scratched-count">0</span> / 100
+  </div>
+
+  <div class="scratch-grid" id="cardGrid"></div>
+</div>
+
+<script>
+  (function() {
+    const items = [
+      "1. Cozinhar um prato novo juntos do zero.",
+      "2. Fazer uma noite de cinema na sala com pipoca e coberta.",
+      "3. Tomar café da manhã na cama.",
+      "4. Assistir ao pôr do sol juntos.",
+      "5. Dançar na sala ouvindo as músicas que vocês mais gostam.",
+      "6. Fazer massagem um no outro.",
+      "7. Escrever uma carta de amor à mão e entregar.",
+      "8. Tomar banho de chuva juntos.",
+      "9. Maratonar uma série nova debaixo do edredom.",
+      "10. Montar um quebra-cabeça grande juntos.",
+      "11. Plantar algo juntos em casa.",
+      "12. Fazer um piquenique em uma praça ou parque simples.",
+      "13. Passar a tarde lendo juntos no mesmo cômodo.",
+      "14. Preparar um jantar surpresa à luz de velas em casa.",
+      "15. Sair para caminhar pelo bairro sem rumo só conversando.",
+      "16. Jogar baralho ou jogo de tabuleiro até tarde.",
+      "17. Sentar e fazer uma lista de planos do casal para o futuro.",
+      "18. Olhar fotos antigas de vocês dois e relembrar o começo.",
+      "19. Ir a uma cafeteria bonitinha tomar um café e conversar.",
+      "20. Acordar bem cedo para ver o nascer do sol.",
+      "21. Fazer uma caminhada na natureza ou ir a uma cachoeira próxima.",
+      "22. Acampar (pode ser até na sala ou no quintal).",
+      "23. Pegar o carro ou ônibus e fazer um passeio sem rumo.",
+      "24. Andar de bicicleta juntos.",
+      "25. Tentar aprender um esporte novo juntos.",
+      "26. Conversar sobre o sonho de ter filhos e construir uma família.",
+      "27. Descobrir juntos a notícia de uma gravidez ou adoção.",
+      "28. Montar e decorar o quartinho do bebê juntos.",
+      "29. Escolher os nomes dos filhos e pensar no significado de cada um.",
+      "30. Sentir o bebê mexer na barriga pela primeira vez.",
+      "31. Fazer as compras do enxoval juntos.",
+      "32. Tirar fotos do barrigão mês a mês para guardar de recordação.",
+      "33. Acompanhar as consultas e ver o ultrassom juntos.",
+      "34. Segurar o nosso filho no colo pela primeira vez logo após o nascimento.",
+      "35. Revezar nas madrugadas para cuidar do bebê com carinho e paciência.",
+      "36. Ver o primeiro sorriso do nosso filho.",
+      "37. Comemorar a primeira vez que ele conseguir sentar sozinho.",
+      "38. Ver o nosso filho engatinhar pela casa toda.",
+      "39. Testemunhar e se emocionar com os primeiros passos do nosso filho.",
+      "40. Ouvir a primeira palavra dele (e disputar para ver se é 'mamãe' ou 'papai').",
+      "41. Ensinar as primeiras brincadeiras e ver as risadas do bebê.",
+      "42. Comemorar cada mesversário e o primeiro aniversário.",
+      "43. Dar o primeiro banho de piscina ou de mar no nosso filho.",
+      "44. Levar no primeiro dia de aula da escola e segurar a emoção.",
+      "45. Ensinar o nosso filho a andar de bicicleta sem rodinhas.",
+      "46. Ler historinhas na cama para ele dormir todas as noites.",
+      "47. Fazer viagens em família e criar memórias inesquecíveis.",
+      "48. Ver nossos filhos crescendo, descobrindo o mundo e virando adultos.",
+      "49. Fazer uma viagem surpresa onde só um sabe o destino.",
+      "50. Passar a Virada de Ano na praia.",
+      "51. Aprender uma receita nova juntos assistindo a um vídeo.",
+      "52. Fazer alguma arte manual juntos, como pintura ou desenho.",
+      "53. Aprender uns passos de dança juntos em casa.",
+      "54. Tentar aprender palavras novas em outro idioma juntos.",
+      "55. Escrever uma música ou um poema simples um para o outro.",
+      "56. Tentar tocar algum instrumento juntos.",
+      "57. Montar um álbum com fotos impressas de vocês.",
+      "58. Pintar uma parede da casa ou arrumar um móvel juntos.",
+      "59. Criar uma cápsula do tempo para abrir daqui a alguns anos.",
+      "60. Inventar um drink ou uma receita especial de vocês.",
+      "61. Fazer um ensaio de fotos bem simples ao ar livre.",
+      "62. Montar uma horta em vasinhos para a cozinha.",
+      "63. Olhar as estrelas à noite e tentar achar constelações.",
+      "64. Criar uma playlist no celular só com as músicas de vocês.",
+      "65. Escrever um diário juntos, onde cada um escreve um pouco.",
+      "66. Ir a um show de uma banda que vocês curtem.",
+      "67. Tirar um dia para um 'dia de spa' em casa, com banho relaxante e máscaras faciais.",
+      "68. Ir a um brechó ou feirinha e escolher uma roupa engraçada um para o outro.",
+      "69. Ir a um show de comédia para dar risada.",
+      "70. Jogar videogame juntos.",
+      "71. Ir ao teatro ou a um cinema de rua.",
+      "72. Ir a um jogo de futebol ou evento esportivo.",
+      "73. Ir a uma feira de rua e provar várias comidas diferentes.",
+      "74. Fazer uma noite temática em casa (ex: noite da pizza, noite do hambúrguer).",
+      "75. Ir a um karaokê e cantar um dueto.",
+      "76. Acordar cedo no fim de semana para ir à feira tomar caldo de cana e comer pastel.",
+      "77. Visitar um museu ou exposição na cidade.",
+      "78. Assistir a um filme dentro do carro.",
+      "79. Fazer um trabalho voluntário ou ajudar alguma instituição juntos.",
+      "80. Passar uma noite em um hotel legal na própria cidade só para mudar de ar.",
+      "81. Fazer uma caça ao tesouro com bilhetinhos fofos pela casa.",
+      "82. Ver um festival de música ao ar livre.",
+      "83. Fazer um lanche noturno sob a luz da lua.",
+      "84. Recriar exatamente o primeiro encontro de vocês.",
+      "85. Fazer brigadeiro na panela e comer juntos colherada por colherada.",
+      "86. Tomar um sorvete no meio da tarde em um dia quente.",
+      "87. Fazer compras no mercado juntos para preparar algo especial.",
+      "88. Ver a chuva caindo da janela tomando um chocolate quente.",
+      "89. Fazer carinho no cabelo do outro até dormir.",
+      "90. Personalizar uma camiseta ou caneca juntos.",
+      "91. Testar jogos de perguntas para se conhecerem ainda melhor.",
+      "92. Sair sem celular por algumas horas para focar só um no outro.",
+      "93. Levar o cachorro para passear juntos no parque.",
+      "94. Fazer uma lista de desejos de lugares simples para conhecerem na região.",
+      "95. Escolher um livro e ler capítulos um para o outro em voz alta.",
+      "96. Comprar doces da infância e relembrar momentos antigos.",
+      "97. Aprender a fazer pão caseiro juntos.",
+      "98. Ir a um mirante da cidade à noite para ver as luzes lá embaixo.",
+      "99. Deixar bilhetinhos com frases carinhosas escondidos nas coisas do outro.",
+      "100. Envelhecer juntos, ver a família reunida nas festas e continuar se amando em cada fase da vida."
+    ];
+
+    const grid = document.getElementById('cardGrid');
+    const scratchedCountEl = document.getElementById('scratched-count');
+    
+    let savedProgress = JSON.parse(localStorage.getItem('scratched_items_v2')) || {};
+
+    function updateCounter() {
+      const count = Object.keys(savedProgress).length;
+      if (scratchedCountEl) scratchedCountEl.textContent = count;
+    }
+
+    items.forEach((text, index) => {
+      const card = document.createElement('div');
+      card.className = 'scratch-card';
+
+      const secret = document.createElement('div');
+      secret.className = 'scratch-secret-content';
+      const cleanText = text.replace(/^\d+\.\s*/, '');
+      secret.innerHTML = `<span class="scratch-number-tag">#${index + 1}</span>${cleanText}`;
+      card.appendChild(secret);
+
+      const canvas = document.createElement('canvas');
+      card.appendChild(canvas);
+
+      const ctx = canvas.getContext('2d');
+
+      function initCanvas() {
+        canvas.width = card.offsetWidth;
+        canvas.height = card.offsetHeight;
+        
+        if (savedProgress[index]) {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        } else {
+          ctx.fillStyle = '#d0bfff';
+          ctx.fillRect(0, 0, canvas.width, canvas.height);
+          
+          ctx.fillStyle = '#5c4d7d';
+          ctx.font = 'bold 12px sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText('✨ Raspe Aqui', canvas.width / 2, canvas.height / 2);
+        }
+      }
+
+      setTimeout(initCanvas, 50);
+
+      let isDrawing = false;
+
+      function scratch(e) {
+        if (!isDrawing || savedProgress[index]) return;
+
+        const rect = canvas.getBoundingClientRect();
+        const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+        const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+        
+        const x = clientX - rect.left;
+        const y = clientY - rect.top;
+
+        ctx.globalCompositeOperation = 'destination-out';
+        ctx.beginPath();
+        ctx.arc(x, y, 22, 0, Math.PI * 2);
+        ctx.fill();
+
+        checkPercentage();
+      }
+
+      function checkPercentage() {
+        if (savedProgress[index]) return;
+
+        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const pixels = imageData.data;
+        let transparentPixels = 0;
+
+        for (let i = 3; i < pixels.length; i += 4) {
+          if (pixels[i] === 0) transparentPixels++;
+        }
+
+        if (transparentPixels / (pixels.length / 4) > 0.35) {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          savedProgress[index] = true;
+          localStorage.setItem('scratched_items_v2', JSON.stringify(savedProgress));
+          updateCounter();
+          
+          if (window.confetti) {
+            confetti({
+              particleCount: 40,
+              spread: 60,
+              origin: { y: 0.8 }
+            });
+          }
+        }
+      }
+
+      canvas.addEventListener('mousedown', () => isDrawing = true);
+      canvas.addEventListener('mouseup', () => isDrawing = false);
+      canvas.addEventListener('mousemove', scratch);
+
+      canvas.addEventListener('touchstart', () => isDrawing = true);
+      canvas.addEventListener('touchend', () => isDrawing = false);
+      canvas.addEventListener('touchmove', scratch);
+
+      grid.appendChild(card);
+    });
+
+    updateCounter();
+  })();
+</script>
+<!-- ================= FIM DA SEÇÃO RASPADINHA ================= -->
+
